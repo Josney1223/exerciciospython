@@ -36,7 +36,7 @@ for i in range(len(mo)):
         notas_series[series_disp.index(mo[i][0])][1][1] = float(notas_series[series_disp.index(mo[i][0])][1][1]) + 1
 
 for i in range(len(series_disp)):
-    print('{:<20}'.format(str(series_disp[i]) + ':'), '{:^4.2f}'.format(notas_series[i][0][0]/notas_series[i][0][1]), '(IMDB)', '{:^4.2f}'.format(notas_serie[i][1][0]/notas_series[i][1][1]), '(Netflix)')
+    print('{:<20}'.format(str(series_disp[i]) + ':'), '{:^4.2f}'.format(notas_series[i][0][0]/notas_series[i][0][1]), '(IMDB)', '{:^4.2f}'.format(notas_series[i][1][0]/notas_series[i][1][1]), '(Netflix)')
     
 
     
