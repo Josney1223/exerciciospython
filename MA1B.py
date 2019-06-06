@@ -47,7 +47,7 @@ def verificar_nota_serie():
             notas_serie_Net[series_disp.index(series_M[i][0])][1] = float(notas_serie_Net[series_disp.index(series_M[i][0])][1]) + 1
             
     for i in range(len(series_disp)):
-        print(str(series_disp[i]) + ':', '{:0.2f}'.format(notas_serie_IMDB[i][0]/notas_serie_IMDB[i][1]), '(IMDB)', '{:0.2f}'.format(notas_serie_Net[i][0]/notas_serie_Net[i][1]), '(Netflix)')
+        print('{:<20}'.format(str(series_disp[i]) + ':'), '{:^4.2f}'.format(notas_serie_IMDB[i][0]/notas_serie_IMDB[i][1]), '(IMDB)', '{:^4.2f}'.format(notas_serie_Net[i][0]/notas_serie_Net[i][1]), '(Netflix)')
         
 verificar_dez()
 verificar_num_ep()
